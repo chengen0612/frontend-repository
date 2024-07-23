@@ -8,7 +8,7 @@ export function generateApi(
     try {
       let data;
 
-      data = useMock ? mock : await handler(...args);
+      data = +useMock ? mock : await handler(...args);
       data = await schema.validate(data);
 
       if (transformer) {
