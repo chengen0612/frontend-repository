@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Janique",
+        "last": "Costa"
+      },
+      "location": {
+        "street": {
+          "number": 8364,
+          "name": "Rua Belo Horizonte "
+        },
+        "city": "Araraquara",
+        "state": "Rondônia",
+        "country": "Brazil",
+        "postcode": 12989,
+        "coordinates": {
+          "latitude": "-74.5614",
+          "longitude": "-150.0978"
+        },
+        "timezone": {
+          "offset": "+1:00",
+          "description": "Brussels, Copenhagen, Madrid, Paris"
+        }
+      },
+      "email": "janique.costa@example.com",
+      "login": {
+        "uuid": "827d20c0-fa56-40aa-a2de-7df6d682d269",
+        "username": "smalltiger544",
+        "password": "brooks",
+        "salt": "7QvzaON4",
+        "md5": "265f9404f364a2d4bae5e5ce38f1b9f8",
+        "sha1": "0983b360ee207e50ec7b17b1d8ff7afd8f1aafc9",
+        "sha256": "0294557064c682a241395631ec4d9e3a83b5735ceb335472e17b6af0fe78f9c0"
+      },
+      "dob": {
+        "date": "1993-12-07T16:16:12.770Z",
+        "age": 30
+      },
+      "registered": {
+        "date": "2021-10-21T06:06:45.362Z",
+        "age": 2
+      },
+      "phone": "(84) 5181-4592",
+      "cell": "(23) 6323-6609",
+      "id": {
+        "name": "CPF",
+        "value": "804.188.050-02"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/42.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg"
+      },
+      "nat": "BR"
+    }
+  ],
+  "info": {
+    "seed": "1",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
