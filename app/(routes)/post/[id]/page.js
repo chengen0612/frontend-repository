@@ -1,13 +1,13 @@
-import { client } from "@/app/client";
+import { actions } from "@/app/actions";
 import Comment from "./components/comment";
 import { Suspense } from "react";
 
 export default async function Page({ params }) {
   const { id } = params;
-  const post = await client.post.get(id);
-  const comments = await client.post.comment.list(id);
-  const user = await client.user.profile.get(post.userId);
-  const avatar = await client.user.avatar.get(user.username);
+  const post = await actions.post.get(id);
+  const comments = await actions.post.comment.list(id);
+  const user = await actions.user.profile.get(post.userId);
+  const avatar = await actions.user.avatar.get(user.username);
 
   return (
     <div className="mt-9 mx-auto w-1/2">

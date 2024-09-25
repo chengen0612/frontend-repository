@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 
-import { client } from "@/app/client";
+import { actions } from "@/app/actions";
 import Profile from "./components/profile";
 
 export default async function Page() {
@@ -11,7 +11,7 @@ export default async function Page() {
     redirect("/login");
   }
 
-  const user = await client.user.profile.get(userId);
+  const user = await actions.user.profile.get(userId);
 
   return (
     <div className="text-center">
@@ -21,7 +21,7 @@ export default async function Page() {
 
       <Profile userId={userId} />
 
-      <form action={client.auth.logout}>
+      <form action={actions.auth.logout}>
         <button className="mt-12 text-lg bg-red-500 rounded py-1 px-2 text-slate-50 hover:text-white hover:bg-red-400">
           Logout
         </button>

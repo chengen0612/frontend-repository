@@ -1,7 +1,7 @@
-import { client } from "@/app/client";
+import { actions } from "@/app/actions";
 
 export default async function Comment({ comment }) {
-  const avatar = await client.user.avatar.get(comment.username);
+  const avatar = await actions.user.avatar.get(comment.username);
 
   return (
     <div className="flex items-center gap-x-6">

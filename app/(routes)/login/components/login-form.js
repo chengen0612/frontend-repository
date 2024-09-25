@@ -1,8 +1,8 @@
-import { client } from "@/app/client";
+import { actions } from "@/app/actions";
 
 export default function LoginForm() {
   return (
-    <form className="mt-12 mx-auto grid w-[400px]" action={client.auth.login}>
+    <form className="mt-12 mx-auto grid w-[400px]" action={actions.auth.login}>
       <div className="grid">
         <label htmlFor="userId" className="text-lg font-medium">
           User Id

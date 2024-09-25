@@ -1,8 +1,8 @@
-import { client } from "@/app/client";
+import { actions } from "@/app/actions";
 
 export default async function Profile({ userId }) {
-  const user = await client.user.profile.get(userId);
-  const avatar = await client.user.avatar.get(user.username);
+  const user = await actions.user.profile.get(userId);
+  const avatar = await actions.user.avatar.get(user.username);
 
   return (
     <div className="mt-12 mx-auto w-1/2 text-center">
