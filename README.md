@@ -1,4 +1,4 @@
-This is an example project of front-end api architecture of Cola Tour.
+Demonstrate the API architecture of the Cola Tour frontend repositories.
 
 ## Installation
 
@@ -16,9 +16,11 @@ Run the development server.
 npm run dev
 ```
 
+## Look Around
+
 Open [https://localhost:3000](https://localhost:3000) with your browser to see the result.
 
-The supported paths are:
+The following paths are available:
 
 - [https://localhost:3000/post/[id]](https://localhost:3000/post/1)
 - [https://localhost:3000/login/](https://localhost:3000/login/)
