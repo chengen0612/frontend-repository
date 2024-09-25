@@ -1,7 +1,10 @@
-import comments from "../requests/post.comments";
-import retrieve from "../requests/post.retrieve";
+import getPost from "../requests/post.get";
+import listComment from "../requests/post.comment.list";
 
 export const postRepository = {
-  comments,
-  retrieve,
+  get: getPost,
+
+  comment: {
+    list: listComment,
+  },
 };

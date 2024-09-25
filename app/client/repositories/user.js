@@ -1,7 +1,12 @@
-import retrieve from "../requests/user.retrieve";
-import avatar from "../requests/user.avatar";
+import getProfile from "../requests/user.profile.get";
+import getAvatar from "../requests/user.avatar.get";
 
 export const userRepository = {
-  retrieve,
-  avatar,
+  profile: {
+    get: getProfile,
+  },
+
+  avatar: {
+    get: getAvatar,
+  },
 };

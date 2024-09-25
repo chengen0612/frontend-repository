@@ -1,7 +1,7 @@
 import { client } from "@/app/client";
 
 export default async function Comment({ comment }) {
-  const avatar = await client.user.avatar(comment.username);
+  const avatar = await client.user.avatar.get(comment.username);
 
   return (
     <div className="flex items-center gap-x-6">

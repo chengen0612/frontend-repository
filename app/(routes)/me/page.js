@@ -11,7 +11,7 @@ export default async function Page() {
     redirect("/login");
   }
 
-  const user = await client.user.retrieve(userId);
+  const user = await client.user.profile.get(userId);
 
   return (
     <div className="text-center">

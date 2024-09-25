@@ -4,10 +4,10 @@ import { Suspense } from "react";
 
 export default async function Page({ params }) {
   const { id } = params;
-  const post = await client.post.retrieve(id);
-  const comments = await client.post.comments(id);
-  const user = await client.user.retrieve(post.userId);
-  const avatar = await client.user.avatar(user.username);
+  const post = await client.post.get(id);
+  const comments = await client.post.comment.list(id);
+  const user = await client.user.profile.get(post.userId);
+  const avatar = await client.user.avatar.get(user.username);
 
   return (
     <div className="mt-9 mx-auto w-1/2">
