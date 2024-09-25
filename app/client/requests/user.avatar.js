@@ -1,9 +1,9 @@
 import * as yup from "yup";
 
-import { client } from "../client";
+import { http } from "../instance";
 
 export default async function handler(username) {
-  const response = await client.get("https://randomuser.me/api/", {
+  const response = await http.get("https://randomuser.me/api/", {
     seed: username,
   });
 
