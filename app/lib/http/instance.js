@@ -1,4 +1,4 @@
-import { http } from "./http";
+import { http } from "./core/http";
 import { logger } from "./utils/logger";
 
 export const instance = http.create({
