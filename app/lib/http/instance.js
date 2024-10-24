@@ -1,5 +1,6 @@
 import { http } from "./core/http";
 import { logger } from "./utils/logger";
+import { processPayload } from "./utils/payload";
 import { unwrapJson } from './utils/resolver';
 
 export const instance = http.create({
