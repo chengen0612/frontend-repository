@@ -3,12 +3,11 @@ import * as yup from "yup";
 import { http } from "../../lib/http";
 
 export default async function handler(id) {
-  const response = await http.get(
+  const { data } = await http.get(
     "https://jsonplaceholder.typicode.com/posts",
     { id }
   );
 
-  const data = await response.json();
   const validated = await schema.validate(data);
 
   return validated[0];

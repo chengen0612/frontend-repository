@@ -3,11 +3,10 @@ import * as yup from "yup";
 import { http } from "../../lib/http";
 
 export default async function handler(username) {
-  const response = await http.get("https://randomuser.me/api/", {
+  const { data } = await http.get("https://randomuser.me/api/", {
     seed: username,
   });
 
-  const data = await response.json();
   const validated = await schema.validate(data);
 
   return validated.results?.[0]?.picture;
