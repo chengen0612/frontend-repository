@@ -73,7 +73,11 @@ class HttpClient {
     let response = await fetch(_url, _options);
     response = await this.middlewares.response.process(response);
 
-    return response;
+    return {
+      status: response.status,
+      statusText: response.statusText,
+      data: response.data ?? {},
+    };
   }
 }
 
