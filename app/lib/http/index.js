@@ -1,1 +1,1 @@
-export { http } from "./http";
+export { instance as http } from "./instance";

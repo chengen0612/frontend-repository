@@ -1,10 +1,8 @@
-import { http } from "../lib/http";
+import { http } from "./http";
 import { logger } from "./utils/logger";
 
-const instance = http.create({
+export const instance = http.create({
   // ...
 });
 
 instance.middlewares.response.use(logger);
-
-export { instance as http };

@@ -1,6 +1,6 @@
 import * as yup from "yup";
 
-import { http } from "../instance";
+import { http } from "../../lib/http";
 
 export default async function handler(username) {
   const response = await http.get("https://randomuser.me/api/", {
