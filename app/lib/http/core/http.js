@@ -25,13 +25,13 @@ class HttpClient {
    * @param {string=} options.baseUrl
    * @param {RequestInit=} options.defaultOptions
    */
-  create(options) {
+  create(options = {}) {
     return new HttpClient(options);
   }
 
   /**
    * @param {string} url
-   * @param {{key: string}=} params
+   * @param {{[key: string]: string}=} params
    * @param {RequestInit=} options
    */
   get(url, params = {}, options) {
@@ -47,7 +47,7 @@ class HttpClient {
 
   /**
    * @param {string} url
-   * @param {{key: string}=} body
+   * @param {{[key: string]: any}=} body
    * @param {RequestInit=} options
    */
   post(url, body = {}, options) {
