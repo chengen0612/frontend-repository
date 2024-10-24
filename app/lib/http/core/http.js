@@ -1,5 +1,5 @@
 import { Middleware } from "./middleware";
-import { deepMerge } from "../utils/manipulate";
+import { deepMerge } from "../utils/operations";
 
 /**
  * An extremely simplified HTTP client that benefit from Next.js caching mechanisms.
